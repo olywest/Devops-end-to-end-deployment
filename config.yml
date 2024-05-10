@@ -39,8 +39,8 @@ jobs:
 
             # environment variables available for entrypoint/command run by docker container
         environment:
-          MY_ENV_VAR_1: my-value-1
-          MY_ENV_VAR_2: my-value-2
+          MY_ENV_VAR_1: Shelyna87@
+          MY_ENV_VAR_2: olywest
 workflows:
   version: 2
   build-master:
