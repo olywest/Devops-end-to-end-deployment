@@ -23,8 +23,8 @@ jobs:
       - run:
           name: Push Docker image to Docker Hub
           command: |
-            docker tag your_image_name $DOCKERHUB_USERNAME/my_image:latest
-            docker push $DOCKERHUB_USERNAME/my_image:latest
+            docker tag your_image_name olywest/my_image:latest
+            docker push olywest/my_image:latest
 
 workflows:
   version: 2
