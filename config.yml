@@ -36,6 +36,11 @@ jobs:
           command: |
             echo "$DOCKERHUB_PASSWWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
             docker push $IMAGE_NAME:latest
+
+            # environment variables available for entrypoint/command run by docker container
+        environment:
+          MY_ENV_VAR_1: my-value-1
+          MY_ENV_VAR_2: my-value-2
 workflows:
   version: 2
   build-master:
